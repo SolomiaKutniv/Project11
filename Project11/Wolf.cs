@@ -9,20 +9,20 @@ namespace Project11
     public class Wolf : Animal
     {
         public string Breed { get; set; }
-        public string NaturalLocation { get; set; }
+        public string Location { get; set; }
 
         public Wolf(double weight, int age, double cost, string breed, string location)
             : base(weight, age, cost)
         {
             Breed = breed;
-            NaturalLocation = location;
+            Location = location;
         }
 
         public override string Info()
         {
             return base.Info() +
                    "Порода: " + Breed + ";" +
-                   "Локація: " + NaturalLocation + ";";
+                   "Локація: " + Location + ";";
         }
     }
 
